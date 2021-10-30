@@ -1,0 +1,35 @@
+@import "~bootstrap/scss/bootstrap-reboot";
+@import "~bootstrap/scss/bootstrap-utilities";
+@import "~bootstrap/scss/bootstrap-grid";
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/buttons";
+
+body {
+  background: rgb(247, 247, 247);
+}
+
+.list__header {
+  .icon {
+    transition: transform 0.3s ease-out;
+  }
+  &.open {
+    .icon {
+      transform: rotate(45deg);
+    }
+  }
+}
+
+.list__body {
+  animation: fade 0.5s forwards ease;
+}
+
+// fade animation
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
